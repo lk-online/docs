@@ -5,3 +5,11 @@
 # Draft content
 drafts/
 *.draft.mdx
+
+# Vendor documentation only
+quickstart.mdx
+development.mdx
+essentials/
+snippets/
+api-reference/
+ai-tools/
