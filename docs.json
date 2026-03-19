@@ -36,19 +36,19 @@
   "logo": {
     "light": "/logo/light.png",
     "dark": "/logo/dark.png",
-    "link": "https://ship-around.com/shop"
+    "href": "https://ship-around.com/shop"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "/contact-us"
+        "href": "https://ship-around.com/contact-us"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Vendor dashboard",
-      "href": "/vendor-dashboard"
+      "href": "https://ship-around.com/vendor-dashboard"
     }
   },
   "contextual": {
