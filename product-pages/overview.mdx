@@ -1,0 +1,27 @@
+---
+title: "Product pages overview"
+description: "How public category and product URLs are structured on ship-around.com and what this section documents."
+---
+
+Ship-Around splits public **product discovery** into two main page types:
+
+1. **Leaf category pages** (product archives)—a filtered grid of every listing attached to the **deepest** category in the shop tree.
+2. **Single product pages**—the full detail page for one **parent** product (simple or variable), including variations, documents, and vendor actions.
+
+Both sit alongside the main [Shop](https://ship-around.com/shop/) entry. Mega-menu links jump straight to **`/categories/...`** leaves; the **last child** of each branch is the URL that actually lists products in a grid.
+
+## URL patterns (live site)
+
+| Page type | URL pattern | Real examples |
+| --- | --- | --- |
+| Leaf category | `/categories/{parent}/{child}/` | [Pneumatic Fenders](https://ship-around.com/categories/fenders/pneumatic-fenders/) · [PP Ropes](https://ship-around.com/categories/mooring-lines/pp-ropes/) |
+| Single product | `/products/{family}/{subcategory}/{slug}/` | [Trelleborg Pneumatic Fender](https://ship-around.com/products/fenders/pneumatic-fenders/trelleborg-pneumatic-fender/) · [PP Rope (Preneur Marine)](https://ship-around.com/products/mooring-lines/pp-ropes/pp-rope-preneur-marine/) |
+
+Other routes you will see from these pages include **brand** links (`/brand/{slug}/`), **stock location** links (`/stock-location/...`), and **vendor** storefront links (`/vendor/{slug}/`).
+
+## In this section
+
+- [Leaf category (product loop) pages](/product-pages/leaf-category-pages)—filters, grid cards, and empty states.
+- [Single product (detail) pages](/product-pages/single-product-pages)—variations, cart, documentation, and related products.
+
+For how buyers are expected to use the shop conceptually, see [Shop, compare, and inquire](/buyers/shop-compare-inquire) and [Categories and coverage](/platform/categories-and-coverage).

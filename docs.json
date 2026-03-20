@@ -11,6 +11,71 @@
   "navigation": {
     "tabs": [
       {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": ["documentation"]
+          }
+        ]
+      },
+      {
+        "tab": "Platform",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "platform/what-is-ship-around",
+              "platform/how-the-platform-works"
+            ]
+          },
+          {
+            "group": "For you",
+            "pages": ["platform/for-buyers", "platform/for-vendors"]
+          },
+          {
+            "group": "Catalog and support",
+            "pages": [
+              "platform/categories-and-coverage",
+              "platform/trust-payments-support"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Product pages",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "product-pages/overview",
+              "product-pages/leaf-category-pages",
+              "product-pages/single-product-pages"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Buyers",
+        "groups": [
+          {
+            "group": "Start here",
+            "pages": ["buyers/why", "buyers/how"]
+          },
+          {
+            "group": "Find and order",
+            "pages": [
+              "buyers/shop-compare-inquire",
+              "buyers/checkout-and-payment"
+            ]
+          },
+          {
+            "group": "Orders and support",
+            "pages": ["buyers/shipping-and-delivery", "buyers/returns-and-help"]
+          }
+        ]
+      },
+      {
         "tab": "Vendors",
         "groups": [
           {

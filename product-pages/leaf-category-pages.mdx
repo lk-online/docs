@@ -1,0 +1,45 @@
+---
+title: "Leaf category (product loop) pages"
+description: "What buyers see on the deepest shop category URLs: filters, product cards, and empty categories."
+---
+
+Leaf URLs follow **`/categories/{parent}/{child}/`**. They are the **product loops** in the catalogue: each card represents a **parent** listing; opening it goes to a [single product page](/product-pages/single-product-pages).
+
+## Examples from the live site
+
+**Categories with products**
+
+- [Pneumatic Fenders](https://ship-around.com/categories/fenders/pneumatic-fenders/) — many pneumatic fender listings; mixed prices and lead times.
+- [PP Ropes](https://ship-around.com/categories/mooring-lines/pp-ropes/) — smaller assortment; some cards show **Price available upon request** instead of a numeric price.
+
+**Categories with no products yet**
+
+- [Ball Valves](https://ship-around.com/categories/valves/ball-valves/) — placeholder message, **Notify me**, and **List your products** (vendor dashboard).
+- [Gate Valves](https://ship-around.com/categories/valves/gate-valves/) — same empty pattern.
+
+Use these to illustrate **full** vs **empty** archive behaviour when documenting buyer or vendor flows.
+
+## Page chrome
+
+- **Title** — Matches the category name (for example “PP Ropes - Ship-Around”).
+- **SHOW FILTERS** — Reveals sidebar / drawer filters. Observed facets include **Stock Location** (sometimes nested, e.g. country then city) and **Lead Time**, plus **Reset** where applicable.
+
+## Product cards (grid)
+
+Each card typically includes:
+
+- **Thumbnail** linking to the single product URL under `/products/...`.
+- **Product title** (linked).
+- **Lead Time** — May list one value or several (comma-separated) when variations differ.
+- **Stock Location** — Text and/or links into stock-location routes when present.
+- **Price** — Shown when the listing exposes a price; otherwise copy such as **Price available upon request**.
+
+Cards are **not** the variation table; buyers choose a specific variation only after opening the product page.
+
+## Empty state
+
+When nothing is published in that leaf, the page explains that no products are listed, offers **Notify me**, and points suppliers to **[List your products](https://ship-around.com/vendor-dashboard/)**.
+
+---
+
+Related: [Categories and coverage](/platform/categories-and-coverage) · [Single product pages](/product-pages/single-product-pages)

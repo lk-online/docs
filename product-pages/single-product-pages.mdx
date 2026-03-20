@@ -1,0 +1,53 @@
+---
+title: "Single product (detail) pages"
+description: "Anatomy of a public product URL on ship-around.com: gallery, variations, vendor contact, and related items."
+---
+
+Single product URLs follow **`/products/{family}/{subcategory}/{slug}/`**. The live site uses the same **family / subcategory** segments as the matching **`/categories/...`** branch so paths stay predictable.
+
+## Examples from the live site
+
+- **Variable product (multiple purchasable rows)** — [Trelleborg Pneumatic Fender](https://ship-around.com/products/fenders/pneumatic-fenders/trelleborg-pneumatic-fender/)
+- **Variable product (different attribute set)** — [PP Rope (Preneur Marine)](https://ship-around.com/products/mooring-lines/pp-ropes/pp-rope-preneur-marine/)
+
+Use these when you need concrete screenshots or walkthroughs; attribute columns differ by **product family** (fender size vs rope diameter, etc.).
+
+## Above the fold
+
+- **Gallery** — Primary image (additional images may be available in the live gallery UI).
+- **Title** — Parent product name.
+- **Lead Time** — Summary line; exact options are confirmed per variation.
+- **Stock location** — Linked when the vendor publishes a location (country / site).
+- **Brand** — Linked to `/brand/...` when set.
+- **Condition / badges** — For example “Undocumented” appears when classing data is incomplete (wording may evolve).
+- **Watchlist** — Link to the global watchlist flow.
+
+## Variations and add to cart
+
+For **variable** parents, the page exposes:
+
+- **Available variations** — Table with the SKU-defining attributes for that category (**Lead Time**, **Size**, pressure, **Year**, etc.), plus **Price**, **Stock**, and an **Add** action per row.
+- **Attribute selectors** — Dropdowns (or similar) mirroring those columns so buyers can pick one combination before **Add to cart**.
+
+Simple products follow the same template with a single purchasable line.
+
+## Vendor contact
+
+- **Vendor** name links to the public vendor profile.
+- **WhatsApp** — Pre-filled message including product title and URL.
+- **Contact vendor** — Modal composer; the site states that **personal contact details are redacted** from messages to protect participants.
+
+## Content blocks
+
+- **Description** — Free text / bullets from the listing.
+- **Additional information** — Structured fields rolled up from attributes (and related labels such as **Fender Type**, **Coil Length**, etc., depending on category).
+- **Documentation & downloads** — File links (for example PDF certificates) when the vendor uploaded assets; may duplicate under **General documentation** in the UI.
+
+## Discovery at the bottom
+
+- **More products in …** — Curated strip from the **same leaf category** (`/categories/...`) as the product.
+- **These latest additions might interest you** — Cross-category carousel of newer listings.
+
+---
+
+Related: [Leaf category pages](/product-pages/leaf-category-pages) · [Shop, compare, and inquire](/buyers/shop-compare-inquire)
