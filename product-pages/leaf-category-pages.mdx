@@ -5,20 +5,6 @@ description: "What buyers see on the deepest shop category URLs: filters, produc
 
 Leaf URLs follow **`/categories/{parent}/{child}/`**. They are the **product loops** in the catalogue: each card represents a **parent** listing; opening it goes to a [single product page](/product-pages/single-product-pages).
 
-## Examples from the live site
-
-**Categories with products**
-
-- [Pneumatic Fenders](https://ship-around.com/categories/fenders/pneumatic-fenders/) — many pneumatic fender listings; mixed prices and lead times.
-- [PP Ropes](https://ship-around.com/categories/mooring-lines/pp-ropes/) — smaller assortment; some cards show **Price available upon request** instead of a numeric price.
-
-**Categories with no products yet**
-
-- [Ball Valves](https://ship-around.com/categories/valves/ball-valves/) — placeholder message, **Notify me**, and **List your products** (vendor dashboard).
-- [Gate Valves](https://ship-around.com/categories/valves/gate-valves/) — same empty pattern.
-
-Use these to illustrate **full** vs **empty** archive behaviour when documenting buyer or vendor flows.
-
 ## Page chrome
 
 - **Title** — Matches the category name (for example “PP Ropes - Ship-Around”).
@@ -28,13 +14,14 @@ Use these to illustrate **full** vs **empty** archive behaviour when documenting
 
 Each card typically includes:
 
-- **Thumbnail** linking to the single product URL under `/products/...`.
-- **Product title** (linked).
-- **Lead Time** — May list one value or several (comma-separated) when variations differ.
-- **Stock Location** — Text and/or links into stock-location routes when present.
-- **Price** — Shown when the listing exposes a price; otherwise copy such as **Price available upon request**.
+- **Thumbnail** and **product title**, each linking to the single product page.
+- **Price** — Either one price or a **price range** when the listing has more than one priced option. If no price is shown publicly, the card may say something like **Price available upon request**.
+- **Stock location** — Where the item is stocked (for example city and country), when the seller added it.
+- **Number of variations** — For listings with several variations, the card may show how many there are. **Clicking that** opens a small window that lists the combinations (sizes, options, and so on) so buyers can see what exists without leaving the category page. Choosing a variation and buying still happens on the product page.
+- **Lead time** — A single lead time when everything matches, or wording such as **From … days** when options use different lead times and the card reflects the **shortest** one.
+- **Seller type** — Labels such as **OEM** or **Reseller**, when that detail is stored for the seller.
 
-Cards are **not** the variation table; buyers choose a specific variation only after opening the product page.
+Buyers still open the full product page to pick a variation, set quantity, and complete a purchase; the category grid is an overview, not the checkout path.
 
 ## Empty state
 
