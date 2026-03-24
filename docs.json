@@ -109,12 +109,7 @@
         "label": "Support",
         "href": "https://ship-around.com/contact-us"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Vendor dashboard",
-      "href": "https://ship-around.com/vendor-dashboard"
-    }
+    ]
   },
   "contextual": {
     "options": [
