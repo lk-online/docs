@@ -40,8 +40,13 @@ Section heading: **Step 3: Download Workbook**.
 
 ### How the workbook is organized
 
-- Instruction rows at the top explain how to fill the sheet.
-- **Locked** columns (often including draft reference and title) must stay as provided.
+The first three rows of each sheet are instructions (row 1–3):
+
+1. **Numeric values:** Use a dot for decimals (up to two decimal places) and no thousand separators (for example `12.50` or `10250.32`). If a column has a unit of measure (UoM) next to it, pick the right value from the dropdown and enter only the number in the cell. Enter **prices in USD** and **stock as whole numbers** (integers).
+2. **Draft ID and title:** Those columns are pre-filled—do not change them. To add another variation for the same draft product, **copy the draft ID and title onto every new row** you fill in.
+3. **Scope:** The workbook applies only to your **current pending drafts**. Delete or discard it when you are done.
+
+- **Locked** columns (often including draft reference and title) must stay as provided, consistent with the sheet instructions above.
 - **SKU-defining** columns (blue-tinted in the file) are the combinations that create separate variations.
 - **Per-variation detail** columns (purple-tinted) add extra information per row.
 - **Required** columns (yellow-tinted, often marked with `*`) include **Price**, **Stock**, and **Lead Time**. Values must follow the rules shown in the sheet (for example: positive price with up to two decimal places using a dot, whole-number stock, **Lead Time** exactly matching one of the allowed options).
